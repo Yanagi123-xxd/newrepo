@@ -1,4 +1,24 @@
 <head>ya begitulah intinya </head>
-<body>kemarin hantu datang makan daun cabai merah
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="60183b5e-cd59-485a-9bc6-d3f1840c4aa7";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<body>
+kemarin hantu datang makan daun cabai merah
+
+<script type="text/javascript">
+window.$crisp = [];
+window.CRISP_WEBSITE_ID = "60183b5e-cd59-485a-9bc6-d3f1840c4aa7";
+(function(){
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+
+// Tunggu sampai Crisp siap, lalu set data
+window.addEventListener("crisp:ready", function() {
+  window.$crisp.push(["set", "session:data", [
+    ["brand_origin", "Yanagi Store"],
+    ["domain", window.location.hostname]
+  ]]);
+});
+</script>
 </body>
